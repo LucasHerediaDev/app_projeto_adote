@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Voluntário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    {% load static %}
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'imgs/modelo.png' %}" alt="Imagem de um cachorro">
+        <div class="form-container">
+            <h1>Cadastre e encontre um amigo</h1>
+            <p>Não compre, adote!   </p>
+            <form action="{% url 'listagem_usuarios'%}" method="post">
+                {% csrf_token %}
+                <input type="text" name="nome"placeholder="Informe seu nome completo" required>
+                <input type="text" name="email"placeholder="Informe o email" required>
+                <input type="number" name="celular"placeholder="Informe seu celular" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

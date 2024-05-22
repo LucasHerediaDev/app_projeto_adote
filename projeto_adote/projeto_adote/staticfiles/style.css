@@ -1,0 +1,79 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #ffba08, #faa307);
+}
+.container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: flex;
+    max-width: 1300px;  
+}
+.container img {
+    border-radius: 10px 0 0 10px;
+    width: 600px;
+    height: 700px;
+}
+.form-container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-container h1 {
+    color: #ffba08;
+    font-size: 24px;
+}
+.form-container p {
+    color: #333;
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-container button {
+    width: 100%;
+    background-color: #faa307;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-container button:hover {
+    background-color: #ffba08;
+}
+.form-container label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.form-container label input {
+    margin-right: 10px;
+}
+.form-container label a {
+    color: #faa307;
+}
+.form-container .social-login {
+    margin-top: 20px;
+    text-align: center;
+}
+.form-container .social-login img {
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

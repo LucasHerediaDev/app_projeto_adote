@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+thead {
+    background-color: #292929;
+}
+th {
+    color: #ffffff;
+    border-bottom: 1px solid #444444;
+}
+tbody tr {
+    background-color: #1e1e1e;
+}
+tbody tr:nth-child(odd) {
+    background-color: #2a2a2a;
+}
+tr:hover {
+    background-color: #333333;
+}
+th:first-child, td:first-child {
+    border-left: none;
+}
+th:last-child, td:last-child {
+    border-right: none;
+}
+/* Estilos para os checkboxes */
+th:first-child, td:first-child {
+    width: 40px;
+    text-align: center;
+}
+th:first-child input, td:first-child input {
+    cursor: pointer;
+}
+/* Estilos para a paginação (opcional) */
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #ffffff;
+}
